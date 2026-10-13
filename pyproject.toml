@@ -1,0 +1,25 @@
+[project]
+name = "mcp-crash-course-langchain-mcp-adapters"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Man Yiu", email = "11912398+manyiu@users.noreply.github.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "azure-identity>=1.26.0",
+    "langchain>=1.4.5",
+    "langchain-mcp-adapters>=0.3.2",
+    "langchain-ollama>=1.1.0",
+    "langchain-openai>=1.7.1",
+    "langgraph>=1.2.15",
+    "python-dotenv>=1.2.4",
+]
+
+[project.scripts]
+mcp-crash-course-langchain-mcp-adapters = "mcp_crash_course_langchain_mcp_adapters:main"
+
+[build-system]
+requires = ["uv_build>=0.13.0,<0.14.0"]
+build-backend = "uv_build"
